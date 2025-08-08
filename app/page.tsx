@@ -7,11 +7,8 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [stars, setStars] = useState<JSX.Element[]>([]);
-  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
-
     const starElements = [...Array(10)].map((_, i) => {
       const delay = Math.random() * 5;
       const startX = Math.random() * window.innerWidth;
@@ -172,11 +169,9 @@ export default function Home() {
       />
 
       {/* Shooting Stars (Hydration Safe) */}
-      {mounted && (
-        <div className="z-[15] absolute w-full h-full pointer-events-none">
-          {stars}
-        </div>
-      )}
+      <div className="z-[15] absolute w-full h-full pointer-events-none">
+        {stars}
+      </div>
     </main>
   );
 }
