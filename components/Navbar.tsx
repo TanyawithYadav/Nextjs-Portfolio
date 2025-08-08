@@ -5,7 +5,7 @@ import { Socials } from "@/constants";
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 z-[40] w-full h-[80px] md:h-[100px] bg-transparent flex justify-between items-center px-4 sm:px-6 md:px-20">
+    <div className="fixed top-0 z-[40] w-full h-[80px] md:h-[100px] bg-transparent flex justify-between items-center px-4 sm:px-6 md:px-20 md:-mt-2">
       {/* Logo + Name */}
       <div className="flex items-center gap-2 sm:gap-3">
         <div className="relative">
