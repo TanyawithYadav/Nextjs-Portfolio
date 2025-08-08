@@ -3,10 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+
 
 export default function Home() {
-  const [stars, setStars] = useState<JSX.Element[]>([]);
+  const [stars, setStars] = useState<React.ReactNode[]>([]);
 
   useEffect(() => {
     const starElements = [...Array(10)].map((_, i) => {
