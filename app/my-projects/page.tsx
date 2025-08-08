@@ -6,7 +6,7 @@ import Link from "next/link";
 const Page = () => {
   return (
     <div
-      style={{ backgroundImage: "url(/mountains.jpg)" }}
+      style={{ backgroundImage: "url(/Mountains.jpg)" }}
       className="w-screen min-h-screen bg-cover bg-center overflow-x-hidden"
     >
       {/* Scrollable only on mobile */}
