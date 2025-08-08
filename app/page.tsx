@@ -59,7 +59,7 @@ export default function Home() {
           </h1>
 
           <p className="text-gray-200 text-center md:text-left">
-            Hi, I'm 
+            Hi, I&apos;m 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
               {" "}Tanya Yadav
             </span> – a full-stack web wizard from Lucknow, blending creativity with code!

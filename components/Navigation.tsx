@@ -24,7 +24,7 @@ const Navigation = () => {
       }, 1200);
       return () => clearTimeout(timeout);
     }
-  }, [isRouting]);
+  }, [path, isRouting]);
 
   return (
     <>
